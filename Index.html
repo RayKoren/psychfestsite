@@ -1,65 +1,50 @@
 <!DOCTYPE html>
 <html lang="en-us" ng-app="psychFest">
-
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Synesthesia | Denver Psych Fest</title>
-        
-        <!--Angular-->
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-        <!--Bootstrap-->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/boostrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-        <script src="./carousel.js"></script>        
-         <!--CSS-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-        <link rel="stylesheet" href=".\style.css">
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-        
-    </head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Synesthesia | Denver Psych Fest</title>
 
-    <body ng-controller="homeController">
-        <header>
-            <div id="carouselHeader" class="carousel slide" data-ride="carousel">
-                <!-- <ol class="carousel-indicators">
-                    <li data-target="#carouselHeader" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselHeader" data-slide-to="1"></li>
-                    <li data-target="#carouselHeader" data-slide-to="2"></li>
-                </ol> -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img class="d-block img-fluid" src="http://marqueemag.com/wp-content/uploads/2015/08/10-Snake-Rattle-Rattle-Snake-6-702x336.jpg" alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block img-fluid" src="http://marqueemag.com/wp-content/uploads/2015/08/10-Snake-Rattle-Rattle-Snake-6-702x336.jpg" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block img-fluid" src="http://marqueemag.com/wp-content/uploads/2015/08/10-Snake-Rattle-Rattle-Snake-6-702x336.jpg" alt="Third slide">
-                    </div>
-                </div>
+    <!--Angular-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 
-            </div>
-        </header>
-            <topnav></topnav>        
-        <main>
-          <ng-view></ng-view>
-        </main>  
-        <footer>
-            <footernav></footernav>    
-        </footer>
-        
-        <!-- Directives  -->
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="./carousel.js"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href=".\style.css">
+</head>
+
+<body ng-controller="homeController">
+    <header>
+        <div class="">
+            <img class="d-block img-fluid" src="http://marqueemag.com/wp-content/uploads/2015/08/10-Snake-Rattle-Rattle-Snake-6-702x336.jpg" alt="First slide">
+        </div>
+    </header>
+    <topnav></topnav>
+    <main>
+        <ng-view></ng-view>
+    </main>
+    <footer>
+        <footernav></footernav>
+    </footer>
+
+    <!-- Directives  -->
 
     <script type="text/javascript" src="directives/mainDirective.js"></script>
     <script type="text/javascript" src="directives/topNav.js"></script>
     <script type="text/javascript" src="directives/footerNav.js"></script>
-    
+
     <script type="text/javascript" src="Controllers/mainController.js"></script>
-        <script type="text/javascript" src="Controllers/homeController.js"></script>
+    <script type="text/javascript" src="Controllers/homeController.js"></script>
     <script src="app.js"></script>
-    </body>
+</body>
 
 </html>
