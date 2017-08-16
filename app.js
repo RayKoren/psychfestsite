@@ -21,6 +21,10 @@ angular.module('psychFest', [
                 templateUrl: 'templates/contact.html',
                 controller: 'homeController'
             })
+            .when('/volunteer', {
+                templateUrl: 'templates/volunteer.html',
+                controller: 'homeController'
+            })
             .when('/tickets', {
                 templateUrl: 'templates/tickets.html',
                 controller: 'homeController'
@@ -59,6 +63,10 @@ angular.module('psychFest', [
             })
             .when('/terms', {
                 templateUrl: 'templates/terms.html',
+                controller: 'homeController'
+            })
+            .when('/sponsorship', {
+                templateUrl: 'templates/sponsorship.html',
                 controller: 'homeController'
             })
             .when('/images', {

@@ -30,6 +30,10 @@ footer {
   color: black;
   background-color: white;
 }
+.carousel-inner > .carousel-item > img {
+    margin: 0 auto;
+}
+
 /*navbar*/
 .navbar {
     z-index: 100;
