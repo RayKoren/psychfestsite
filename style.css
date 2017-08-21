@@ -17,7 +17,9 @@ header {
 footer {
     background-color: black;
 }
-
+.carouselP {
+  font-size:.4rem;
+}
 .img-hor {
     transform: rotateY(180deg); // Rotate 180 degrees along the y-axis
 }
@@ -32,13 +34,15 @@ footer {
 }
 .carousel-inner > .carousel-item > img {
     margin: 0 auto;
+    min-height:600px;
+    max-height:600px;
+    width: 850px;
 }
 
 /*navbar*/
 .navbar {
     z-index: 100;
-
-
+    margin-bottom: 1rem;
 }
 .navbar-right li {
     list-style-type: none;
