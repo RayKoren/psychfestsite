@@ -17,6 +17,9 @@ header {
 footer {
     background-color: black;
 }
+#view {
+  min-height: 40rem;
+}
 .carouselP {
   font-size:.4rem;
 }
